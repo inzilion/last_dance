@@ -1,7 +1,6 @@
 'use client'
 
 export default function DelBtn({id}){
-  console.log(id);
   return(
     <span 
       style={{cursor:"pointer"}} 

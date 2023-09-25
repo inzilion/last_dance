@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react"
 
 export default function Edit(props){
-  const [image, setImage] = useState(null);
-  const [profile, setProfile] = useState(null);
+  const [image, setImage] = useState('');
+  const [profile, setProfile] = useState('');
 
   const imageLoadHandler = (e) => {
     const file = e.target.files[0];
