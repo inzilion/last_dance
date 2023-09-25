@@ -1,5 +1,6 @@
 import client from "@/util/database"
 import Link from "next/link";
+import DelBtn from "./delBtn";
 
 export default async function Board(){
   const db = await client.db('last_dance');
@@ -11,7 +12,10 @@ export default async function Board(){
       {
         list.map((item, i) => 
         <div key={i}>
-          <Link href={`/board/detail/${item._id.toString()}`}>{item.name}</Link>
+          <Link href={`/board/detail/${item._id.toString()}`}>
+            {item.name}
+          </Link>
+          <DelBtn id={item._id.toString()}/>
         </div>)
       }
     </div>
