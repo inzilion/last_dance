@@ -26,9 +26,7 @@ export default async function Detail({params}){
         : ""
       }
       {
-        session 
-        ? <CommentList parentId={params.id}/>
-        : ""
+        <CommentList parentId={params.id}/>
       }
     </>
   )
