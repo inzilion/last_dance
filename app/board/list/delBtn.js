@@ -15,7 +15,7 @@ export default function DelBtn({id}){
           e.target.parentNode.style.display="none";
         })
       }}>
-      🚩
+      ❌
     </span>
   )
 }
